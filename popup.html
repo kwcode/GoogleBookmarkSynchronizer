@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="utf-8">
+    <title>Async Bookmark from Github</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+
+<body>
+    <!-- loading -->
+    <div class="loading-wrap" id="divLoading" style="display:none;">
+        <div class="loading">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+    <!-- content -->
+    <div class="content">
+        <!-- login -->
+        <div class="login" id="divLogin">
+            <div class="row">
+                <label for="tbUsername" class="key">Username</label>
+                <input type="text" class="input" id="tbUsername" placeholder="Username" />
+            </div>
+            <div class="row">
+                <label for="tbToken" class="key">Access Token</label>
+                <input type="password" class="input" id="tbToken" placeholder="Personal Access Tokens" />
+            </div>
+            <div class="row">
+                <label for="tbPath" class="key">Path</label>
+                <input type="text" class="input" id="tbPath" placeholder="myrepo/bookmark.json" />
+            </div>
+            <div class="tip" id="divTip" style="display:none;">error!</div>
+            <div class="remember-me off" id="divRemember"><span class="text">Remember Me</span><span class="toggle" id="spToggle"></span></div>
+            <div class="row mt-55">
+                <label for="" class="key"></label>
+                <button class="btn half" id="btnUpload" data-type="upload">Upload</button>
+                <button class="btn half light" id="btnDownload" data-type="download">Download</button>
+                <button class="btn" id="btnAutoUpdate" data-type="autoUpdate">自动更新</button>
+            </div>
+        </div>
+        <!-- success -->
+        <div class="success" id="divSuccess" style="display:none;">
+            <div class="icon-success"></div>
+            <div class="success-info" id="divSuccessInfo">Success</div>
+        </div>
+    </div>
+    <!-- scripts -->
+    <script src="vendors/jquery-2.1.0.min.js"></script>
+    <script src="vendors/base64.js"></script>
+    <script src="github.js"></script>
+    <script src="popup.js"></script>
+</body>
+
+</html>

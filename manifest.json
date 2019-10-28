@@ -1,0 +1,19 @@
+{
+   "browser_action": {
+      "default_icon": "icon.png",
+      "default_popup": "popup.html",
+      "default_title": "书签同步"
+   },
+   "description": "上传/下载书签信息到Github",
+   "icons": {
+      "128": "icon128.png",
+      "16": "icon16.png",
+      "48": "icon48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAiuFAb/HPPP1/mAUfQg7cP0e8Yf9Jg6VPh75AvDliYsJbui7lmNVOD9XJcqEqXuSVkJs3DqfSea+pYwSl8kfA4ReKhz0dAzWIdkemAhOYyM+FvXk0uxLn6Wp/GtUos/Yquu0vQljm/m8oxlWQkqrZCL01ls4B1/NZWrYrxvXzpGn9PAtJYQuWyg4/a/sc2nE/wfPedynuiWGQZRIJRNSniBZG3+YoebbELepkyPPuecoSiXTsMwu9Wk9NUs1wXCcm+fJWrKcrMbvtINYqt/pW9KuB9ouLuSC66fbRYgGGayoDNzKKlE0mf+SVk/6sMC8pthS+qB7rAqnlRXbdLPrvywIDAQAB",
+   "manifest_version": 2,
+   "name": "书签同步",
+   "permissions": [ "bookmarks", "storage", "https://api.github.com/" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.0"
+}
